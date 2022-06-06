@@ -1,0 +1,3 @@
+[submodule "public/flag-icons"]
+	path = public/flag-icons
+	url = git@github.com:lipis/flag-icons.git

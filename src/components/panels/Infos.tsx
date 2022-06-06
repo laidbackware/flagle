@@ -98,7 +98,7 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Worldle FAQ
+            Flagle FAQ
           </a>
           !
         </div>
