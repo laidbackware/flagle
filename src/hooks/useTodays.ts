@@ -11,12 +11,12 @@ import { areas } from "../domain/countries.area";
 import { Guess, loadAllGuesses, saveGuesses } from "../domain/guess";
 
 const forcedCountries: Record<string, string> = {
-  "2022-02-02": "TD",
-  "2022-02-03": "PY",
-  "2022-03-21": "HM",
-  "2022-03-22": "MC",
-  "2022-03-23": "PR",
-  "2022-03-24": "MX",
+  "2022-02-02": "MX",
+  "2022-02-03": "TD",
+  "2022-03-21": "PY",
+  "2022-03-22": "HM",
+  "2022-03-23": "MC",
+  "2022-03-24": "PR",
 };
 
 const noRepeatStartDate = DateTime.fromFormat("2022-05-01", "yyyy-MM-dd");
@@ -24,6 +24,7 @@ const noRepeatStartDate = DateTime.fromFormat("2022-05-01", "yyyy-MM-dd");
 export function getDayString(shiftDayCount?: number) {
   return DateTime.now()
     .plus({ days: shiftDayCount ?? 0 })
+    .plus({ days: 100 })
     .toFormat("yyyy-MM-dd");
 }
 
